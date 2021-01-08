@@ -40,14 +40,26 @@ a:focus {outline:none;}
   clear: both;
   visibility: hidden;
 }
+header {
+	width: 960px;
+	height: 99px;
+	margin: 0 auto 0 auto;
+}
 header h1{
-  text-align: center;
+	width: 213px;
+	height: 39px;
+	margin-top: 30px;
+	float: left;
   font-size: 24px;
 }
 header h2{
   text-align: center;
   font-size: 16px;
 }
+nav ul li a{
+	text-decoration: inherit;
+}
+
 div#left a{
   color: white;
   text-decoration: none;
@@ -61,23 +73,97 @@ div#wrapper{
   height: auto;
 	margin: 0 auto 0 auto;
 }
+div#wrapper h3{
+  text-align: center;
+	position: relative;
+}
 div#left{
-  background-color: pink;
   width: 480px;
   height: 300px;
   float: left;
+	position: relative;
+}
+div#left h3{
+  position: absolute;
+	top: 80%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	-ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+	font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  font-family :Quicksand, sans-serif;/*Google Font*/
+}
+/* .exm{
+	position: relative;
+
+} */
+.exm a{
+	position: absolute;
+	top: auto;
+	left:25%;
+	/* background-color: pink; */
+	background-image: url("../images/girl.jpg");
+	background-size: 400px;
+	background-repeat: no-repeat;
+	width:  240px;       /* ※縦横を同値に */
+  height: 240px;       /* ※縦横を同値に */
+  border-radius: 70%;  /* 角丸半径を50%にする(=円形にする) */
+  background-position: center center;  /* 横長画像の左上を基準に表示 */
 }
 div#right{
-  background-color: blue;
+  background-color: #abd6ca;
   width: 480px;
   height: 300px;
   float: left;
+	position: relative;
+}
+
+div#right h3{
+  position: absolute;
+	top: 80%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	-ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+	font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  font-family :Quicksand, sans-serif;/*Google Font*/
 }
 div#bottom{
-  background-color: green;
+  background-color: #7bd7f9;
   width: 960px;
   height: 300px;
+	position: relative;
 }
+
+div#bottom h3{
+  position: absolute;
+	top: 80%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	-ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+	font-weight: bold; /*太字に*/
+  font-size: 2em;/*サイズ2倍*/
+  font-family :Quicksand, sans-serif;/*Google Font*/
+}
+
 div#clearfix{
 	clear: both;
+}
+
+nav{
+	float: right;
+	margin-top: 56px;
+}
+nav ul li{
+	float: left;
+	margin-left: 20px;
 }

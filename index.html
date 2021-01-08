@@ -2,30 +2,61 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>okb portforio</title>
+    <title>fowork portforio</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
     <header>
-      <h1>okb portforio</h1>
+      <h1>fowork portforio</h1>
       <!-- <h2></h2> -->
+      <nav>
+				<ul>
+          <li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#">WORKS</a></li>
+					<div class="clearfix"></div>
+				</ul>
+			</nav>
+      <div id="clearfix"></div>
     </header>
+
     <div id="wrapper">
-      <div id="left">
-          <img src="skill.png" alt="skill" height="600" weight="600">
-          <h3>SKILL</h3>
+      <div id="left" class="exm">
+
+          <div class="exm">
+            <a href="#">
+                <h3>SKILL</h3>
+            </a>
+          </div>
       </div>
       <div id="right">
-          <h3>Product</h3>
-          <div><a href="#">HTML</a></div>
-          <div><a href="#">CSS</a></div>
+          <img src="images/girl.jpg" alt="skill" height="300" weight="480">
+          <!-- <div class="exm">
+            <a href="#">
+                <h3>PRODUCT</h3>
+            </a>
+          </div> -->
       </div>
       <div id="clearfix"></div>
       <div id="bottom">
-          <h3>About Me</h3>
+          <a href="#"><img src="images/girl.jpg" alt="skill" height="300" weight="960"></a>
       </div>
     </div>
+    <form name="contact" netlify-honeypot="bot-field" method="post" data-netlify="true">
+      <p class="hidden">
+          <label>Don't fill this out if you're human: <input name="bot-field"/></label>
+          <p>
+            <label for="">Email: <input type="text" name="email" /></label>
+          </p>
+          <p>
+            <label for="">Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="Submit">Send</button>
+          </p>
+      </p>
+    </form>
     <footer>
     </footer>
 
